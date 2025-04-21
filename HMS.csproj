@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <Folder Include="App\" />
-    <Folder Include="Persistence\" />
   </ItemGroup>
 
 </Project>
