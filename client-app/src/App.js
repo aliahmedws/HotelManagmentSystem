@@ -1,12 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-import GUEST from './Guest';
+import { Route, Routes } from "react-router-dom";
+import AppLayout from "./components/Layout";
+import GUEST from './pages/Guest';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      <GUEST/>
-    </div>
+    <AppLayout>
+      <AppRoutes></AppRoutes>
+    </AppLayout>
+  );
+}
+
+function AppRoutes() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/guests" element={<GUEST />}></Route>
+    </Routes>
   );
 }
 
