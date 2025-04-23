@@ -13,6 +13,7 @@ namespace HMS.Controllers
         public RoomController(UnitOfWork uow) { 
             _uow = uow;
         }
+        [HttpGet]
         public List<Room> GetBookings()
         {
             var result = _uow.Rooms.GetList();
