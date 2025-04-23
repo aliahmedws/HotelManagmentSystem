@@ -31,12 +31,12 @@ function menuItem(key) {
 }
 const items = [
   getItem("Home", "/", <HomeOutlined />),
-  getItem("Customers", "1", <ShopOutlined />, [
-    getItem("View All", "/guests", <ShopOutlined />),
+  getItem("Customers", "1", <TeamOutlined />, [
+    getItem("View All", "/guests", <TeamOutlined />),
     getItem("Create New", "/guests/form", <PlusOutlined />),
   ]),
-  getItem("Hotel Rooms", "4", <TeamOutlined />, [
-    getItem("View All", "/hotel-rooms", <TeamOutlined />),
+  getItem("Hotel Rooms", "4", <ShopOutlined />, [
+    getItem("View All", "/hotel-rooms", <ShopOutlined />),
     getItem("Create New", "/hotel-rooms/form", <PlusOutlined />),
   ]),
   getItem("Bookings", "7", <CalendarOutlined />, [

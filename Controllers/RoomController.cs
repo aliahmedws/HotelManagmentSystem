@@ -14,7 +14,7 @@ namespace HMS.Controllers
             _uow = uow;
         }
         [HttpGet]
-        public List<Room> GetBookings()
+        public List<Room> GetRooms()
         {
             var result = _uow.Rooms.GetList();
             return result;

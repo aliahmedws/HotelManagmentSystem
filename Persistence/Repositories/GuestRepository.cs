@@ -1,5 +1,5 @@
-﻿using HMS.Migrations;
-using HMS.Models;
+﻿using HMS.Models;
+using HMS.Models.Entities;
 
 namespace HMS.Persistence.Repositories;
 
