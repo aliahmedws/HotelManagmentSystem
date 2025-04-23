@@ -21,10 +21,10 @@ function getItem(label, key, icon, children) {
   };
 }
 function menuItem(key) {
-  if (key === "1" || key === "/organizations" || key === "/organizations/form")
-    return "Organization"
-  else if (key === "4" || key === "/meeting-rooms" || key === "/meeting-rooms/form")
-    return "Meeting Rooms"
+  if (key === "1" || key === "/guests" || key === "/guests/form")
+    return "Customers"
+  else if (key === "4" || key === "/hotel-rooms" || key === "/hotel-rooms/form")
+    return "Hotel Rooms"
   else if (key === "7" || key === "/bookings" || key === "/bookings/form" || key === "/bookings/calendar")
     return "Bookings"
   else return "Home"
