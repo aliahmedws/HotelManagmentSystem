@@ -19,9 +19,9 @@ public class UnitOfWork : IDisposable
         Rooms = new RoomRepository(_context);
     }
 
-    public Task CompleteAsync()
+    public async Task CompleteAsync()
     {
-        return _context.SaveChangesAsync();
+        return await _context.SaveChangesAsync();
     }
 
     public void Dispose()

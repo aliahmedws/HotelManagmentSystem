@@ -33,7 +33,7 @@ const items = [
   getItem("Home", "/", <HomeOutlined />),
   getItem("Customers", "1", <TeamOutlined />, [
     getItem("View All", "/guests", <TeamOutlined />),
-    getItem("Create New", "/guests/form", <PlusOutlined />),
+    getItem("Create New", "/guests/create", <PlusOutlined />),
   ]),
   getItem("Hotel Rooms", "4", <ShopOutlined />, [
     getItem("View All", "/hotel-rooms", <ShopOutlined />),

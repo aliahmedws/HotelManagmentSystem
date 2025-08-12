@@ -14,9 +14,9 @@ namespace HMS.Controllers
             _uow = uow;
         }
         [HttpGet]
-        public List<Booking> GetBookings()
+        public async List<Booking> GetBookings()
         {
-            var result = _uow.Bookings.GetList();
+            var result = await _uow.Bookings.All();
             return result;
         }
     }
